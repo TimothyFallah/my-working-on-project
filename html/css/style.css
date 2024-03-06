@@ -255,7 +255,7 @@ footer p {
 }
 
 #login input {
-  width: calc(90% - 0%);
+  width: calc(100% - 0%);
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
