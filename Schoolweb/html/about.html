@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Apostolic Foundation High School</title>
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <img src="Images/Logo.jpg" alt="School Logo" class="logo">
+      <h1 class="heading-text">APOSTOLIC FOUNDATION HIGH SCHOOL</h1>
+    </div>
+    <p>Airfield Junction, Adjacent The Vamoma House, Sinkor 
+        Monrovia, Liberia.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="index.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-text">
+    <h2 id="about-heading">About Apostolic Foundation High School</h2>
+    <p>Welcome to Apostolic Foundation High School, a beacon of academic 
+        excellence and personal growth. Our commitment is to provide a 
+        nurturing and empowering learning environment.
+         Located at Airfield Junction, Adjacent the Vamoma House, Sinkor,
+          Monrovia, Liberia.</p>
+  </div>
+
+  <div class="page-sections">
+    <section id="about">
+      <h2>About Our School</h2>
+      <p>Apostolic Foundation High School is a renowned institution dedicated to fostering 
+        academic excellence and personal growth. Here are some key 
+        aspects of the school</p><br>
+
+      <p><strong>Mission and Commitment:</strong> The school is committed to 
+        providing a nurturing and empowering learning environment for 
+        its students. The mission is to create a space where students 
+        can excel academically and personally.</p><br>
+
+      <p><strong>Location:</strong> Apostolic Foundation High School is situated 
+        at Airfield Junction, Adjacent the Vamoma House, Sinkor, Monrovia, 
+        Liberia. The strategic location provides accessibility and convenience 
+        for students and parents.</p><br>
+
+      <p><strong>Academic Excellence:</strong> The school is known for its 
+        dedication to academic excellence. Faculty members are committed to 
+        providing quality education and fostering a love for learning.</p><br>
+
+      <p><strong>Personal Growth:</strong> In addition to academic achievements, 
+        the school places a strong emphasis on personal growth. Various programs
+         and activities are designed to help students develop essential life 
+         skills and character.</p><br>
+
+      <p><strong>Learning Environment:</strong> The learning environment is 
+        designed to be nurturing, encouraging students to explore their potential.
+         Facilities and resources are provided to support a
+          well-rounded education.</p><br>
+
+      <p><strong>Community Engagement:</strong> Apostolic Foundation High School 
+        actively engages with the community to create a positive impact. 
+        The school may participate in community service, outreach programs,
+         or collaborative initiatives.</p><br>
+
+      <p><strong>Holistic Approach:</strong> The school adopts a holistic approach
+         to education, addressing the intellectual, emotional, and social 
+         aspects of students' development.</p><br>
+
+      <p><strong>Values:</strong> The institution likely upholds values such as 
+        integrity, respect, responsibility, and a commitment to 
+        social justice.</p><br>
+
+      <p><strong>Partnerships and Collaborations:</strong> Apostolic Foundation 
+        High School may establish partnerships with other educational 
+        institutions, organizations, or businesses to enhance the overall 
+        educational experience.</p><br>
+
+      <p><strong>Extracurricular Activities:</strong> The school may offer a 
+        variety of extracurricular activities, including sports, arts, and clubs,
+         to encourage students' participation and well-rounded development.</p><br>
+
+      <p><strong><em>For more specific information about Apostolic Foundation High School, contact the school administration or refer to any available promotional materials or documentation 
+        provided by the school or contact number or email on the contact page. </em></strong></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2024 Apostolic Foundation High School. All rights reserved.
+  </footer>
+
+  <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">&#8593;</button>
+ <!-- Scroll to top button -->
+  <!-- Inside the body tag, after the footer -->
+  <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">&#8593;</button>
+
+  <script>
+    // JavaScript function to scroll to the top of the page
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // JavaScript function to show/hide the button based on scroll position
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    }
+
+    // Navigation between signup and login sections in the header
+    document.getElementById("signupButton").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "block";
+      document.getElementById("login").style.display = "none";
+    });
+
+    document.getElementById("loginButton").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "none";
+      document.getElementById("login").style.display = "block";
+    });
+
+    // Navigation from links to signup and login sections
+    document.getElementById("signupButtonLink").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "block";
+      document.getElementById("login").style.display = "none";
+    });
+
+    document.getElementById("loginButtonLink").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "none";
+      document.getElementById("login").style.display = "block";
+    });
+  </script>
+</body>
+</html>

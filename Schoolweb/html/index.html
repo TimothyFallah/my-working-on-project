@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostolic Foundation High School</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <img src="Images/Logo.jpg" alt="School Logo" class="logo">
+      <h1 class="heading-text">APOSTOLIC FOUNDATION HIGH SCHOOL</h1>
+    </div>
+    <p>Airfield Junction, Adjacent The Vamoma House, Sinkor Monrovia, Liberia.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="academics.html">Academics</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#signup" id="signupButton">Sign Up</a></li>
+      <li><a href="#login" id="loginButton">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-text">
+    <h2>Providing Quality Education</h2>
+    <p>Preparing Students For A Successful Future</p>
+  </div>
+
+  <div class="page-sections">
+        <section id="about">
+        <h2 onclick="window.location.href='about.html'">About Our School</h2>
+        <p>Welcome to Apostolic Foundation High School, a beacon of academic excellence and personal growth. Our commitment is to provide a nurturing and empowering learning environment. Located at Airfield Junction, Adjacent the Vamoma House, Sinkor, Monrovia, Liberia.</p>
+      </section>
+  
+      <section id="admissions">
+        <h2 onclick="window.location.href='admissions.html'">Admissions</h2>
+        <p>Embark on an exceptional educational journey with Apostolic Foundation High School. Our admissions process is designed to welcome students ready to embrace excellence and contribute to a vibrant learning community. For more information, please contact our admissions office.</p>
+      </section>
+  
+      <section id="academics">
+        <h2 onclick="window.location.href='academics.html'">Academics</h2>
+        <p>Discover academic excellence and holistic development at Apostolic Foundation High School. Our dedicated faculty and comprehensive curriculum aim to equip students with the skills and knowledge needed to succeed in an ever-changing world. Explore our academic programs and join us in shaping a bright future.</p>
+      </section>
+  
+      <section id="events">
+        <h2 onclick="window.location.href='events.html'">Upcoming Events</h2>
+        <ul>
+          <li>Sports Day - Date</li>
+          <li>Science Fair - Date</li>
+          <li>Cultural Festival - Date</li>
+        </ul>
+      </section>
+  
+      <section id="contact">
+        <h2 id="contact">Contact Us</h2>
+        <p>Feel free to reach out to us with any questions or concerns:</p>
+        <p>Email: info@apostolicfoundationhs.com</p>
+        <p>Phone: 123-456-7890</p>
+      </section>
+      
+    <!-- Sign Up Section -->
+<section id="signup">
+  <h2>Sign Up</h2>
+  <p>Create an account to access exclusive features and information.</p><br>
+  <form action="#" method="post">
+    <label for="signupFullname">Full Name:</label>
+    <input type="text" id="signupFullname" name="signupFullname" required><br>
+    
+    <label for="signupEmail">Email:</label>
+    <input type="text" id="signupEmail" name="signupEmail" required><br>
+    
+    <label for="signupAddress">Address:</label>
+    <input type="text" id="signupAddress" name="signupAddress" required><br>
+    
+    <label for="signupContact">Contact:</label>
+    <input type="text" id="signupContact" name="signupContact" required><br>
+    
+    <label for="signupUsername">Username:</label>
+    <input type="text" id="signupUsername" name="signupUsername" required><br>
+    
+    <label for="signupPassword">Password:</label>
+    <input type="password" id="signupPassword" name="signupPassword" required><br>
+    
+    <label for="signupQuestion">Favorite Color:</label>
+    <input type="text" id="signupQuestion" name="signupQuestion" required><br>
+
+    <button type="submit">Sign Up</button>
+    <a href="#login" id="loginButtonLink">Login</a>
+  </form>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+  <h2>Login</h2>
+  <p>Already have an account? Log in here.</p><br>
+  <form action="#" method="post">
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" name="loginUsername" required><br>
+    
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required><br>
+    
+    <button type="submit">Login</button>
+    <a href="#signup" id="signupButtonLink">Create An Account</a>
+  </form>
+</section>
+
+  </div>
+
+  <footer>
+    &copy; 2024 Apostolic Foundation High School. All rights reserved.
+  </footer>
+
+  <!-- Scroll to top button -->
+  <!-- Inside the body tag, after the footer -->
+  <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">&#8593;</button>
+
+  <script>
+    // JavaScript function to scroll to the top of the page
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // JavaScript function to show/hide the button based on scroll position
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    }
+
+    // Navigation between signup and login sections in the header
+    document.getElementById("signupButton").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "block";
+      document.getElementById("login").style.display = "none";
+    });
+
+    document.getElementById("loginButton").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "none";
+      document.getElementById("login").style.display = "block";
+    });
+
+    // Navigation from links to signup and login sections
+    document.getElementById("signupButtonLink").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "block";
+      document.getElementById("login").style.display = "none";
+    });
+
+    document.getElementById("loginButtonLink").addEventListener("click", function () {
+      document.getElementById("signup").style.display = "none";
+      document.getElementById("login").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+/* Common Styles (style.css) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+  
+header {
+    background-color: #001f3f; /* Dark blue */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 0;
+    margin-top: 0;
+}
+  
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.logo {
+    max-height: 8em; /* Adjust the height as needed */
+    margin-right: 56em; /* Reset margin */
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+  
+.heading-text {
+    font-size: 2.8em; /* Increased size */
+    color: #ffffff; /* White */
+    margin-top: -110px;
+    margin-left: 13%;
+}
+  
+p {
+    font-size: 1.3em; /* Increased size */
+    color: #ffffff; /* White */
+    margin-bottom: -19px;
+}
+  
+/* Animation for the p tag in the header */
+header p {
+    animation: rollText 20s infinite linear;
+}
+  
+nav {
+    background-color: #0074cc; /* Royal blue */
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.2s ease-in-out;
+}
+  
+nav ul li a:hover {
+    color: #021acc;
+}
+  
+section {
+    padding: 40px;
+    margin: 20px;
+    background-color: whitesmoke;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeInFromTop 1.5s ease-out;
+}
+  
+section h2 {
+    color: #001f3f; /* Dark blue */
+    transition: color 0.3s ease-in-out;
+}
+  
+section p {
+    color: #000; /* Black */
+    margin-top: 2%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size: 20px;
+}
+  
+.hero-image {
+    background-image: url('imgsrc="Images/Logo.jpg"');
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+  
+/* ... previous styles ... */
+
+.hero-text {
+    color: #00095a;
+    text-align: justify;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInFromTop 1.5s ease-in-out;
+}
+
+.hero-text h2 {
+    text-align: center;
+}
+
+.hero-text p {
+    color: #00095a;
+    margin-bottom: 6%;
+}
+
+footer {
+    background-color: #0800fc; /* Royal blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+  
+footer p {
+    margin: 0;
+}
+  
+/* CSS for the scroll to top button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    animation: fadeInFromTopBtn 1.5s ease-in-out;
+}
+  
+#scrollToTopBtn:hover {
+    background-color: #001f3f;
+}
+  
+/* Keyframe Animations */
+@keyframes rollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+  
+@keyframes fadeInDown {
+    0% {
+      opacity: 10%;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+@keyframes fadeInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+@keyframes fadeInFromTopBtn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
